@@ -1,0 +1,11 @@
+# Versions below were verified together and reproduce
+# results/model_comparison_results.csv byte-for-byte.
+#
+# Install rdkit separately via conda (no reliable pip wheel for py3.10):
+#   conda install -c conda-forge rdkit=2024.3.6
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.7.0
+matplotlib==3.10.8
+seaborn==0.13.2
+openpyxl==3.1.5
