@@ -614,8 +614,11 @@ def main():
     
     # 初始化分类器
     classifier = AdvancedMolecularPropertyClassifier()
-    
-    file_path = 'data.xlsx'
+
+    from pathlib import Path
+    BASE_DIR = Path(__file__).resolve().parent.parent
+
+    file_path = BASE_DIR / "data" / "data.xlsx"
     
     try:
         # 加载和预处理数据
